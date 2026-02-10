@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <!--According to chatGpt, href="#", it affects navigability and SEO-->
+        <a href="index.html"
+          ><img
+            class="lab-logo"
+            src="images/lab-icon.png"
+            alt="laboratory logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <!--aria-current="page" indicates the current page for screen readers-->
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <!-- page in service -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <h1>Laboratory name</h1>
+        <p id="subtitle-banner-home">Delivering results since 1979</p>
+      </section>
+
+      <section id="lab-services-container">
+        <!-- this heading was created to improve navegability and SEO -->
+        <h2 id="services-title" class="sr-only">Laboratory Services</h2>
+        <!-- page in service -->
+        <a class="card" href="index.html">
+           <h3>Laboratory tests</h3>
+          <ul>
+            <li>Results</li>
+            <li>Schedule an Appointment</li>
+            <li>Locations & Hours</li>
+            <li>Test Menu</li>
+            <li>Accepted Insurance</li>
+            <li>FAQs</li>
+          </ul>
+          <!-- for decorative images, alt="" makes screen readers ignore it;
+            aria-hidden="true" hides it from screen readers. -->
+          <img
+            class="arrow-icon"
+            src="images/arrow-icon.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </a>
+        <!-- page in service -->
+        <a class="card" href="index.html">
+          <h3>Veterinary Tests</h3>
+          <ul>
+            <li>Consultation</li>
+            <li>Sample Collection</li>
+            <li>Locations & Hours</li>
+            <li>Lab Results</li>
+            <li>Types of Tests</li>
+            <li>FAQs</li>
+          </ul>
+          <!-- for decorative images, alt="" makes screen readers ignore it;
+            aria-hidden="true" hides it from screen readers. -->
+          <img
+            class="arrow-icon"
+            src="images/arrow-icon.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </a>
+        
+      </section>
+    </main>
+    <footer>
+      <div>
+        <!-- rel="noopener noreferrer", Adds extra security when opening this link in a new tab -->
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+          ><img src="images/x-logo.svg" alt="X (twitter)"
+        /></a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/instagram-logo.svg" alt="instagram"
+        /></a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="images/facebook-logo.svg" alt="facebook"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
