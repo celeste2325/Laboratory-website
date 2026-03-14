@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>About</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -54,29 +54,30 @@
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
                 <a
                   class="nav-link active fw-bold"
-                  href="contact.html"
+                  href="about.html"
                   aria-current="page"
-                  >Contact</a
+                  >About</a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- /nav with bootstrap burger menu -->
+      <!-- / nav with bootstrap burger menu -->
     </header>
+
     <main>
-      <!-- Banner -->
+      <!--  banner -->
       <section class="banner position-relative">
         <h1
           class="banner__title text-center position-absolute top-50 start-50 translate-middle z-3 shadow-lg p-3 mb-5 rounded"
         >
-          Contact
+          About Us
         </h1>
         <img
           src="../images/banner-logo.png"
@@ -84,94 +85,40 @@
           alt="Lab technician looking at samples through a microscope"
         />
       </section>
-      <!-- /Banner -->
+      <!--  /banner -->
 
-      <!-- Contact information section using bootstrap list-group -->
-      <section class="d-flex justify-content-center text-center my-3">
-        <h2 class="visually-hidden">Contact information</h2>
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item">
+      <!-- information about the lab -->
+      <section class="card p-0 my-md-4 container">
+        <div class="row g-0">
+          <figure class="m-0 col-md-4">
             <img
-              class="contact-icon"
-              src="../images/whatsApp-icon.svg"
-              alt="whatsapp icon"
+              class="h-100 img-fluid rounded-start"
+              src="../images/lab-technician.jpg"
+              alt="laboratory technician"
             />
-            <span>(11)3467-9809</span>
-          </li>
-          <li class="list-group-item">
-            <img src="../images/mail-icon.svg" alt="mail icon" />
-            <span>labemail@gmail.com</span>
-          </li>
-          <li class="list-group-item">
-            <img src="../images/call-icon.svg" alt="phone icon" />
-            <span>(11)0976-1245</span>
-          </li>
-        </ul>
-      </section>
-      <!-- /Contact information section using bootstrap list-group -->
+            <figcaption class="visually-hidden">
+              Laboratory technician working in the lab
+            </figcaption>
+          </figure>
 
-      <!-- Contact form section using bootstrap form -->
-      <section class="d-flex flex-column align-items-center text-center mb-3">
-        <h2>Send LabName a Message</h2>
-        <p>In order to assist, please provide the following information:</p>
-        <form
-          action="/send"
-          method="post"
-          class="col-md-7 col-lg-5 shadow-lg p-3 bg-body-tertiary rounded"
-        >
-          <div class="mb-3">
-            <label for="name" class="visually-hidden form-label">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              placeholder="Name"
-            />
-          </div>
-
-          <div class="mb-3">
-            <label for="email" class="visually-hidden form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              aria-describedby="emailHelp"
-              placeholder="Email"
-            />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Who we are</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quod numquam saepe voluptatibus cupiditate accusamus
+                nulla, quasi eius odio provident consequuntur corporis,
+                obcaecati, laborum ullam mollitia. Reprehenderit unde architecto
+                nesciunt?Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Laboriosam perferendis reprehenderit harum incidunt error
+                iusto culpa vel, veniam distinctio numquam ullam. Consequuntur
+                inventore adipisci debitis numquam rerum accusantium eum nemo.
+              </p>
             </div>
           </div>
-
-          <div class="mb-3">
-            <label for="message" class="visually-hidden form-label"
-              >Please provide a detailed question or comment.</label
-            >
-            <textarea
-              name="message"
-              id="message"
-              name="message"
-              class="form-control"
-              placeholder="Please provide a detailed question or comment."
-            ></textarea>
-          </div>
-
-          <div class="mb-3">
-            <fieldset class="form-label">
-              <legend>Are you a labName's patient?</legend>
-              <input type="radio" name="isPatient" id="yes" value="yes" />
-              <label for="yes">Yes</label>
-              <input type="radio" name="isPatient" id="no" value="no" />
-              <label for="no">No</label>
-            </fieldset>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
       </section>
-      <!-- /Contact form section using bootstrap form -->
+      <!-- /information about the lab -->
     </main>
 
     <footer>

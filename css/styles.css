@@ -2,112 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: rgb(237, 241, 241);
   font-family: "Lato", sans-serif;
-  line-height: 1.5;
 }
 header {
   background-color: rgb(12, 182, 233);
-  display: flex;
-  gap: 1rem;
-  padding: 1%;
-}
-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
 }
 .lab-logo {
-  width: 15%;
-}
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-nav ul li a {
-  color: rgb(66, 66, 66);
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  background-color: rgb(12, 182, 233);
-}
-nav ul li a:hover {
-  background-color: rgb(208, 231, 253);
+  width: 80px;
 }
 /* Main */
-main {
-  background-color: rgb(208, 231, 253);
-  display: flex;
-  flex-direction: column;
-}
-/* Banner */
-#banner {
-  background-image: url("../images/banner-logo.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-}
-h1,
-#subtitle-banner-home {
+.banner__title {
   color: rgb(28, 125, 160);
-  text-shadow: 2px 2px rgb(216, 211, 211);
-  font-size: 2.5em;
+  text-shadow: 2px 2px rgb(219, 220, 221);
 }
-/* /Banner */
-
-main section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  border: 1px solid rgb(139, 138, 138);
-  border-radius: 0.75rem;
-  background-color: #f7f7f7;
-  font-size: 1em;
-  color: rgb(78, 76, 76);
-  flex: 1 1 280px;
-}
-.card li {
-  list-style: none;
-  color: rgb(125, 123, 123);
+.banner__title h1,
+.banner__title h2 {
+  font-size: 1.2rem;
 }
 section a {
   text-decoration: none;
 }
 .arrow-icon {
   height: 1rem;
+  display: block;
   margin-left: auto;
+  margin-right: 0;
 }
+
+/* Contact */
+.contact-icon {
+  width: 20px;
+}
+/* /Contact */
 
 /* footer */
 footer {
   padding: 1rem;
   background-color: rgb(99, 99, 102);
-}
-footer div {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-footer div a {
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  text-align: right;
 }
 footer div a img {
-  width: 1.5rem;
+  height: 20px;
 }
+/* /footer */
 
 /* This class hides the text visually but keeps it available for screen readers. */
 .sr-only {
@@ -115,53 +55,87 @@ footer div a img {
   left: -9999px;
 }
 
-/* Pages */
-/* Contact */
-.contact-icon {
-  width: 5%;
-  margin-right: 4%;
+/* laboratory-test-accepted-insurance page,
+css with FLEX/GRID/MQ. Without bootstrap */
+.main--grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
-#contact-form-container {
-  background-color: rgb(237, 241, 241);
-  height: auto;
-}
-/* form */
-input:focus-visible,
-textarea:focus-visible {
-  /*  rompe accesibilidad para usuarios que navegan con teclado o lectores de pantalla. */
-  /* outline: none; */
-  outline: 0.1rem solid rgba(0, 120, 255, 0.35);
-  outline-offset: 0.1rem;
-  box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.35);
-  border: 1px solid rgba(4, 114, 240, 0.35);
-}
-/* /form */
-#contact {
+.banner--flex {
+  background-image: url("../images/banner-logo.png");
+  background-position: right top;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+.banner__title--flex {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  padding: 1rem;
+  border-radius: 0.25rem;
 }
-.contact-form form #button {
-  background-color: rgb(12, 182, 233);
-  color: whitesmoke;
-  border: 1px solid rgb(4, 74, 95);
-  font-weight: bold;
+.main__card {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin: 1rem;
 }
-.contact-form form #button:active {
-  background-color: rgb(237, 241, 241);
-  color: black;
-  border: 1px solid rgb(197, 200, 200);
+.main__card img {
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(143, 149, 159);
+  box-shadow: 8px 4px rgb(143, 149, 159);
 }
-/* /Contact */
-/* tablet */
-@media (max-width: 900px) {
-  .card {
-    flex-basis: 100%;
+/* /laboratory-test-accepted-insurance page */
+
+@media screen and (max-width: 768px) {
+  .header-flex {
+    display: none;
   }
+  /* laboratory-test-accepted-insurance page */
+  .main--grid {
+    grid-template-rows: 1fr 80%;
+    grid-template-columns: 1fr;
+  }
+  .main__card {
+    grid-template-rows: repeat(8, 12%);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.1rem;
+  }
+
+  .main__card img {
+    width: 90%;
+    height: 50%;
+  }
+  /* /laboratory-test-accepted-insurance page */
+}
+
+@media screen and (min-width: 768px) {
+  .banner__title h1,
+  .banner__title h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  /* laboratory-test-accepted-insurance page */
+  .main--grid {
+    grid-template-rows: 1fr 50%;
+    grid-template-columns: 1fr;
+  }
+  .main__card {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* /laboratory-test-accepted-insurance page */
 }
