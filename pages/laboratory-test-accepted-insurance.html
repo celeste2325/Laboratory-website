@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
+    <script defer src="../js/main-2.js"></script>
   </head>
   <!-- this page doesn't use bootstrap only flex, grid, and media queries -->
   <body>
@@ -27,8 +28,22 @@
       <section class="banner banner--flex">
         <h1 class="banner__title banner__title--flex">Accepted Insurance</h1>
       </section>
+      <!-- search -->
+      <form class="search" role="search">
+        <input
+          id="search"
+          class="form-control"
+          type="search"
+          placeholder="Enter at least 3 letters"
+          aria-label="Search"
+          name="search"
+        />
+        <button id="searchBtn" type="submit">Search</button>
+      </form>
+      <!-- /search -->
+
       <!-- this section shows the accepted insurance for laboratory tests -->
-      <section class="main__card">
+      <section id="insuranceContainer" class="main__card">
         <img
           src="../images/accepted-insurance/elevar.png"
           alt="elevar-insurance-logo"

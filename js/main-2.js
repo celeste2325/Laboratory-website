@@ -18,8 +18,11 @@ const autoCompleteForm = () => {
     formData.message.value = formDataLocalStorage.message;
   }
 };
-autoCompleteForm();
-
+/* avoid errors when opening other pages */
+const titlePage = document.title;
+if (titlePage === "Contact") {
+  autoCompleteForm();
+}
 /* set modal data to confirm form information before sending */
 const createConfirmModalMessage = (data) => {
   const headerModal = document.getElementById("modalHeader");
@@ -43,8 +46,10 @@ const handlerContactFormBtn = (event) => {
   createConfirmModalMessage(formData);
 };
 const buttonContactForm = document.getElementById("contactFormBtn");
-contactFormBtn.addEventListener("click", handlerContactFormBtn);
-
+/* avoid errors when opening other pages */
+if (buttonContactForm) {
+  buttonContactForm.addEventListener("click", handlerContactFormBtn);
+}
 /* set Modal data to ask user if they want to save info for next time */
 //to use localStorage
 const handlerSendDataBtn = () => {
@@ -59,8 +64,10 @@ and ask to the user if wants to save the data localy*/
     `;
 };
 const sendDataBtn = document.getElementById("sendDataBtn");
-sendDataBtn.addEventListener("click", handlerSendDataBtn);
-
+/* avoid errors when opening other pages */
+if (sendDataBtn) {
+  sendDataBtn.addEventListener("click", handlerSendDataBtn);
+}
 /* Save form data in localStorage for autocomplete on contact page */
 const handlerSaveLocalStorageUserDataBtn = () => {
   localStorage.setItem("formContactData", JSON.stringify(formData));
@@ -68,9 +75,126 @@ const handlerSaveLocalStorageUserDataBtn = () => {
 const saveLocalStorageUserDataBtn = document.getElementById(
   "saveLocalStorageUserDataBtn",
 );
-saveLocalStorageUserDataBtn.addEventListener(
-  "click",
-  handlerSaveLocalStorageUserDataBtn,
-);
+/* avoid errors when opening other pages */
+if (saveLocalStorageUserDataBtn) {
+  saveLocalStorageUserDataBtn.addEventListener(
+    "click",
+    handlerSaveLocalStorageUserDataBtn,
+  );
+}
 
 /* /Logic for the contact form on the contact page */
+
+/* laboratory-test-accepted-insurance */
+/* insurances list mock */
+const insurances = [
+  {
+    name: "elevar",
+    src: "../images/accepted-insurance/elevar.png",
+    alt: "elevar-insurance-logo",
+  },
+  {
+    name: "ensalud",
+    src: "../images/accepted-insurance/ensalud.png",
+    alt: "ensalud-insurance-logo",
+  },
+  {
+    name: "galeno",
+    src: "../images/accepted-insurance/galeno.png",
+    alt: "galeno-insurance-logo",
+  },
+  {
+    name: "hospital-britanico",
+    src: "../images/accepted-insurance/hospital-britanico.png",
+    alt: "hospital-britanico-insurance",
+  },
+  {
+    name: "ioma",
+    src: "../images/accepted-insurance/ioma.png",
+    alt: "ioma-insurance-logo",
+  },
+  {
+    name: "luis-pasteur",
+    src: "../images/accepted-insurance/luis-pasteur.png",
+    alt: "luis-pasteur-insurance-logo",
+  },
+  {
+    name: "medicus",
+    src: "../images/accepted-insurance/medicus.png",
+    alt: "medicus-insurance-logo",
+  },
+  {
+    name: "medife",
+    src: "../images/accepted-insurance/medife.png",
+    alt: "medife-insurance-logo",
+  },
+  {
+    name: "omint",
+    src: "../images/accepted-insurance/omint.png",
+    alt: "omint-insurance-logo",
+  },
+  {
+    name: "osde",
+    src: "../images/accepted-insurance/osde.png",
+    alt: "osde-insurance-logo",
+  },
+  {
+    name: "osdepym",
+    src: "../images/accepted-insurance/osdepym.png",
+    alt: "osdepym-insurance-logo",
+  },
+  {
+    name: "osmata",
+    src: "../images/accepted-insurance/osmata.png",
+    alt: "osmata-insurance-logo",
+  },
+  {
+    name: "osseg",
+    src: "../images/accepted-insurance/osseg.png",
+    alt: "osseg-insurance-logo",
+  },
+  {
+    name: "pami",
+    src: "../images/accepted-insurance/pami.png",
+    alt: "pami-insurance-logo",
+  },
+  {
+    name: "sancor-salud",
+    src: "../images/accepted-insurance/sancor-salud.png",
+    alt: "sancor-salud-insurance-logo",
+  },
+];
+const insuranceContainer = document.getElementById("insuranceContainer");
+/* update the list of insurances based on user input */
+const showInsurancesByFilter = (insurancesByFilter) => {
+  let elements = "";
+  insurancesByFilter.forEach((insurance) => {
+    elements += `<img
+          src=${insurance.src}
+          alt=${insurance.alt}
+        />`;
+  });
+  /* update the DOM with filtered insurances */
+  insuranceContainer.innerHTML = elements;
+};
+const handlerSearchBtn = (event) => {
+  /* prevent page reload */
+  event.preventDefault();
+  const searchInput = document.getElementById("search");
+  /* only filter if input has at least 3 letters */
+  let insurancesByFilter =
+    searchInput.value.length < 3
+      ? []
+      : insurances.filter((insurance) =>
+          insurance.name
+            .toUpperCase()
+            .startsWith(searchInput.value.toUpperCase()),
+        );
+  showInsurancesByFilter(insurancesByFilter);
+};
+const searchBtn = document.getElementById("searchBtn");
+/* avoid errors when opening other pages */
+if (searchBtn) {
+  searchBtn.addEventListener("click", handlerSearchBtn);
+}
+/* /laboratory-test-accepted-insurance */
