@@ -59,7 +59,6 @@ footer div a img {
 css with FLEX/GRID/MQ. Without bootstrap */
 .search {
   display: flex;
-  border: 1px solid red;
   gap: 0.5rem;
   justify-content: center;
   padding: 1rem;
