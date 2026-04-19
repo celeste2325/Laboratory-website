@@ -1,0 +1,14 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin grid($rows, $column) {
+  display: grid;
+  grid-template-rows: $rows;
+  grid-template-columns: $column;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

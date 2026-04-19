@@ -1,0 +1,9 @@
+/* variables */
+@use "../utilities/variables" as *;
+
+section {
+  .banner__title {
+    color: $banner-text-color;
+    text-shadow: 2px 2px rgb(219, 220, 221);
+  }
+}

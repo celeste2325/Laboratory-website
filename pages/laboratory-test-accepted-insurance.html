@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accepted Insurance</title>
+    <meta
+      name="description"
+      content="View the health insurance plans accepted for laboratory tests at ProLab and access trusted diagnostic services with convenient coverage options."
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer src="../js/main-2.js"></script>
   </head>
   <!-- this page doesn't use bootstrap only flex, grid, and media queries -->
@@ -19,7 +24,7 @@
       <a href="../index.html"
         ><img
           class="lab-logo"
-          src="../images/lab-icon.png"
+          src="https://i.ibb.co/GG0dvvh/logo-Lab.png"
           alt="laboratory logo"
       /></a>
     </header>
@@ -28,8 +33,9 @@
       <section class="banner banner--flex">
         <h1 class="banner__title banner__title--flex">Accepted Insurance</h1>
       </section>
+
       <!-- search -->
-      <form class="search" role="search">
+      <form class="search search--flex" role="search">
         <input
           id="search"
           class="form-control"
@@ -45,49 +51,65 @@
       <!-- this section shows the accepted insurance for laboratory tests -->
       <section id="insuranceContainer" class="main__card">
         <img
-          src="../images/accepted-insurance/elevar.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/N2882S9x/elevar.png"
           alt="elevar-insurance-logo"
-        /><img
-          src="../images/accepted-insurance/ensalud.png"
+        />
+        <img
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/LhgqD34s/ensalud.png"
           alt="ensalud-insurance-logo"
         /><img
-          src="../images/accepted-insurance/galeno.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/gbM3GjyQ/galeno.png"
           alt="galeno-insurance-logo"
         /><img
-          src="../images/accepted-insurance/hospital-britanico.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/8L2dcLsc/hospital-britanico.png"
           alt="hospital-britanico-insurance"
         /><img
-          src="../images/accepted-insurance/ioma.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/cXS6xrPm/ioma.png"
           alt="ioma-insurance-logo"
         /><img
-          src="../images/accepted-insurance/luis-pasteur.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/Rk7B9Rtq/luis-pasteur.png"
           alt="luis-pasteur-insurance-logo"
         /><img
-          src="../images/accepted-insurance/medicus.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/d4PTK4pm/medicus.png"
           alt="medicus-insurance-logo"
         /><img
-          src="../images/accepted-insurance/medife.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/xKSNGq0v/medife.png"
           alt="medife-insurance-logo"
         /><img
-          src="../images/accepted-insurance/omint.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/9XF93sv/omint.png"
           alt="omint-insurance-logo"
         /><img
-          src="../images/accepted-insurance/osde.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/qLwVpL32/osde.png"
           alt="osde-insurance-logo"
         /><img
-          src="../images/accepted-insurance/osdepym.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/5xt93v2J/osdepym.png"
           alt="osdepym-insurance-logo"
         /><img
-          src="../images/accepted-insurance/osmata.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/hJCbLQf1/osmata.png"
           alt="osmata-insurance-logo"
         /><img
-          src="../images/accepted-insurance/osseg.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/TD0d8zKX/osseg.png"
           alt="osseg-insurance-logo"
         /><img
-          src="../images/accepted-insurance/pami.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/qYqsTVJ4/pami.png"
           alt="pami-insurance-logo"
         /><img
-          src="../images/accepted-insurance/sancor-salud.png"
+          data-aos="zoom-in-up"
+          src="https://i.ibb.co/wZ67Dj9W/sancor-salud.png"
           alt="sancor-salud-insurance-logo"
         />
       </section>
@@ -97,21 +119,29 @@
       <div>
         <!-- rel="noopener noreferrer", Adds extra security when opening this link in a new tab -->
         <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
-          ><img src="../images/x-logo.svg" alt="X (Twitter)"
+          ><img src="https://i.ibb.co/nNpMmGMF/x-logo.png" alt="X (Twitter)"
         /></a>
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="../images/instagram-logo.svg" alt="instagram"
+          ><img
+            src="https://i.ibb.co/twZn9m8D/instagram-logo.png"
+            alt="instagram"
         /></a>
         <a
           href="https://www.facebook.com/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="../images/facebook-logo.svg" alt="facebook"
+          ><img
+            src="https://i.ibb.co/gb1d4JRd/facebook-logo.png"
+            alt="facebook"
         /></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

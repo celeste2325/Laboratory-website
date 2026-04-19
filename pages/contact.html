@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <meta
+      name="description"
+      content="Contact ProLab for trusted laboratory services, answers to your questions, and support by phone, email, WhatsApp, or our online form."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,7 +36,7 @@
           <a class="navbar-brand" href="../index.html"
             ><img
               class="img-fluid lab-logo"
-              src="../images/lab-icon.png"
+              src="https://i.ibb.co/GG0dvvh/logo-Lab.png"
               alt="laboratory logo"
           /></a>
           <button
@@ -80,7 +84,7 @@
           Contact
         </h1>
         <img
-          src="../images/banner-logo.png"
+          src="https://i.ibb.co/yBXdcs0L/banner-logo.png"
           class="d-block w-100"
           alt="Lab technician looking at samples through a microscope"
         />
@@ -93,18 +97,23 @@
         <ul class="list-group list-group-horizontal">
           <li class="list-group-item">
             <img
-              class="contact-icon"
-              src="../images/whatsApp-icon.svg"
+              src="https://i.ibb.co/Q39qVL6n/whatsapp-icon.png"
               alt="whatsapp icon"
             />
             <span>(11)3467-9809</span>
           </li>
           <li class="list-group-item">
-            <img src="../images/mail-icon.svg" alt="mail icon" />
-            <span>labemail@gmail.com</span>
+            <img
+              src="https://i.ibb.co/HL0RYVHg/email-icon.png"
+              alt="mail icon"
+            />
+            <span>prolab@gmail.com</span>
           </li>
           <li class="list-group-item">
-            <img src="../images/call-icon.svg" alt="phone icon" />
+            <img
+              src="https://i.ibb.co/TD6ZVGC8/call-icon.png"
+              alt="phone icon"
+            />
             <span>(11)0976-1245</span>
           </li>
         </ul>
@@ -113,7 +122,7 @@
 
       <!-- Contact form section using bootstrap form -->
       <section class="d-flex flex-column align-items-center text-center mb-3">
-        <h2>Send LabName a Message</h2>
+        <h2>Send a Message to ProLab</h2>
         <p>In order to assist, please provide the following information:</p>
         <form
           action="/send"
@@ -159,15 +168,17 @@
             ></textarea>
           </div>
 
-          <button
-            id="contactFormBtn"
-            type="submit"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Submit
-          </button>
+          <div class="mb-3">
+            <fieldset class="form-label">
+              <legend>Are you a ProLab's patient?</legend>
+              <input type="radio" name="isPatient" id="yes" value="yes" />
+              <label for="yes">Yes</label>
+              <input type="radio" name="isPatient" id="no" value="no" />
+              <label for="no">No</label>
+            </fieldset>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </section>
       <!-- /Contact form section using bootstrap form -->
@@ -177,120 +188,25 @@
       <div>
         <!-- rel="noopener noreferrer", Adds extra security when opening this link in a new tab -->
         <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
-          ><img src="../images/x-logo.svg" alt="X (Twitter)"
+          ><img src="https://i.ibb.co/nNpMmGMF/x-logo.png" alt="X (Twitter)"
         /></a>
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="../images/instagram-logo.svg" alt="instagram"
+          ><img
+            src="https://i.ibb.co/twZn9m8D/instagram-logo.png"
+            alt="instagram"
         /></a>
         <a
           href="https://www.facebook.com/"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="../images/facebook-logo.svg" alt="facebook"
+          ><img
+            src="https://i.ibb.co/gb1d4JRd/facebook-logo.png"
+            alt="facebook"
         /></a>
       </div>
     </footer>
-
-    <!-- show modal when the user sends the form -->
-    <div id="exampleModal" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="modalHeader" class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p id="modalBody">Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button
-              id="sendDataBtn"
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#saveDataLocaly"
-            >
-              Save changes
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /show modal when the user send the form -->
-
-    <!-- show modal to confirm sending the data-->
-    <div id="saveDataLocaly" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="saveDataLocalyHeader" class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p id="saveDataLocalyBody">Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              No
-            </button>
-            <button
-              id="saveLocalStorageUserDataBtn"
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#successModal"
-            >
-              Yes
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /show modal to confirm sending the data -->
-
-    <!-- show modal when the user confirms saving the data locally -->
-    <div id="successModal" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p>Message sent! and we'll remember your info for next time.</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /show modal when the user confirms saving the data locally -->
   </body>
 </html>

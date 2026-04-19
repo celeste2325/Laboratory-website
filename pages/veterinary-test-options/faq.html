@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <meta
+      name="description"
+      content="Find answers to common questions about ProLab veterinary services, consultations, lab results, and pet diagnostic testing."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"
+            ><img
+              class="img-fluid lab-logo"
+              src="https://i.ibb.co/GG0dvvh/logo-Lab.png"
+              alt="laboratory logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="justify-content-lg-end collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner position-relative">
+        <h1
+          class="banner__title text-center position-absolute top-50 start-50 translate-middle z-3 shadow-lg p-3 mb-5 rounded"
+        >
+          FAQs
+        </h1>
+        <img
+          src="https://i.ibb.co/yBXdcs0L/banner-logo.png"
+          class="d-block w-100"
+          alt="Veterinary frequently asked questions"
+        />
+      </section>
+
+      <section class="container my-4 col-12 col-md-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqOne"
+                aria-expanded="true"
+                aria-controls="faqOne"
+              >
+                Do I need an appointment for veterinary services?
+              </button>
+            </h2>
+            <div
+              id="faqOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Some veterinary services may require an appointment, while
+                others may be available based on daily availability.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqTwo"
+                aria-expanded="false"
+                aria-controls="faqTwo"
+              >
+                How can I access my pet’s lab results?
+              </button>
+            </h2>
+            <div
+              id="faqTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                You can review your pet’s
+                <a
+                  href="lab-results.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >lab results online</a
+                >
+                or contact ProLab for assistance.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqThree"
+                aria-expanded="false"
+                aria-controls="faqThree"
+              >
+                What types of veterinary tests are available?
+              </button>
+            </h2>
+            <div
+              id="faqThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                ProLab offers several
+                <a
+                  href="types-of-tests.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >veterinary diagnostic services</a
+                >, including blood tests, urinalysis, wellness screening, and
+                specialized panels.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+          ><img src="https://i.ibb.co/nNpMmGMF/x-logo.png" alt="X (Twitter)"
+        /></a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="https://i.ibb.co/twZn9m8D/instagram-logo.png"
+            alt="instagram"
+        /></a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="https://i.ibb.co/gb1d4JRd/facebook-logo.png"
+            alt="facebook"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

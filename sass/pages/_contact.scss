@@ -1,0 +1,12 @@
+/* mixin */
+@use "../utilities/mixin" as *;
+
+section {
+  ul {
+    li {
+      img {
+        @include size(15px, 15px);
+      }
+    }
+  }
+}

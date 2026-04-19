@@ -90,77 +90,77 @@ if (saveLocalStorageUserDataBtn) {
 const insurances = [
   {
     name: "elevar",
-    src: "../images/accepted-insurance/elevar.png",
+    src: "https://i.ibb.co/N2882S9x/elevar.png",
     alt: "elevar-insurance-logo",
   },
   {
     name: "ensalud",
-    src: "../images/accepted-insurance/ensalud.png",
+    src: "https://i.ibb.co/LhgqD34s/ensalud.png",
     alt: "ensalud-insurance-logo",
   },
   {
     name: "galeno",
-    src: "../images/accepted-insurance/galeno.png",
+    src: "https://i.ibb.co/gbM3GjyQ/galeno.png",
     alt: "galeno-insurance-logo",
   },
   {
     name: "hospital-britanico",
-    src: "../images/accepted-insurance/hospital-britanico.png",
+    src: "https://i.ibb.co/8L2dcLsc/hospital-britanico.png",
     alt: "hospital-britanico-insurance",
   },
   {
     name: "ioma",
-    src: "../images/accepted-insurance/ioma.png",
+    src: "https://i.ibb.co/cXS6xrPm/ioma.png",
     alt: "ioma-insurance-logo",
   },
   {
     name: "luis-pasteur",
-    src: "../images/accepted-insurance/luis-pasteur.png",
+    src: "https://i.ibb.co/Rk7B9Rtq/luis-pasteur.png",
     alt: "luis-pasteur-insurance-logo",
   },
   {
     name: "medicus",
-    src: "../images/accepted-insurance/medicus.png",
+    src: "https://i.ibb.co/d4PTK4pm/medicus.png",
     alt: "medicus-insurance-logo",
   },
   {
     name: "medife",
-    src: "../images/accepted-insurance/medife.png",
+    src: "https://i.ibb.co/xKSNGq0v/medife.png",
     alt: "medife-insurance-logo",
   },
   {
     name: "omint",
-    src: "../images/accepted-insurance/omint.png",
+    src: "https://i.ibb.co/9XF93sv/omint.png",
     alt: "omint-insurance-logo",
   },
   {
     name: "osde",
-    src: "../images/accepted-insurance/osde.png",
+    src: "https://i.ibb.co/qLwVpL32/osde.png",
     alt: "osde-insurance-logo",
   },
   {
     name: "osdepym",
-    src: "../images/accepted-insurance/osdepym.png",
+    src: "https://i.ibb.co/5xt93v2J/osdepym.png",
     alt: "osdepym-insurance-logo",
   },
   {
     name: "osmata",
-    src: "../images/accepted-insurance/osmata.png",
+    src: "https://i.ibb.co/hJCbLQf1/osmata.png",
     alt: "osmata-insurance-logo",
   },
   {
     name: "osseg",
-    src: "../images/accepted-insurance/osseg.png",
+    src: "https://i.ibb.co/TD0d8zKX/osseg.png",
     alt: "osseg-insurance-logo",
   },
   {
     name: "pami",
-    src: "../images/accepted-insurance/pami.png",
+    src: "https://i.ibb.co/qYqsTVJ4/pami.png",
     alt: "pami-insurance-logo",
   },
   {
     name: "sancor-salud",
-    src: "../images/accepted-insurance/sancor-salud.png",
+    src: "https://i.ibb.co/wZ67Dj9W/sancor-salud.png",
     alt: "sancor-salud-insurance-logo",
   },
 ];

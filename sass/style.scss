@@ -1,0 +1,18 @@
+/* reset */
+@use "base/reset";
+/* header layout */
+@use "layout/header";
+/* banner */
+@use "layout/banner";
+/* laboratory-test-accepted-insurance */
+@use "pages/laboratory-test-accepted-insurance";
+/* about */
+@use "pages/about";
+/* contact */
+@use "pages/contact";
+/* footer */
+@use "layout/footer";
+/* mobile media queries */
+@use "layout/mq-mobile";
+/* tablet media queries */
+@use "layout/mq-tablet";

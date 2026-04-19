@@ -1,0 +1,14 @@
+/* variables */
+@use "../utilities/variables" as *;
+/* mixin */
+@use "../utilities/mixin" as *;
+
+header {
+  background-color: $nav-bg-color;
+}
+
+a {
+  .lab-logo {
+    @include size(80px, 40px);
+  }
+}
