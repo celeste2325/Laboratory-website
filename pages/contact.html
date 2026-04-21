@@ -26,7 +26,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script defer src="../js/main-2.js"></script>
+    <script type="module" src="../js/main-2.js"></script>
   </head>
   <body>
     <header>
@@ -168,17 +168,15 @@
             ></textarea>
           </div>
 
-          <div class="mb-3">
-            <fieldset class="form-label">
-              <legend>Are you a ProLab's patient?</legend>
-              <input type="radio" name="isPatient" id="yes" value="yes" />
-              <label for="yes">Yes</label>
-              <input type="radio" name="isPatient" id="no" value="no" />
-              <label for="no">No</label>
-            </fieldset>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button
+            id="contactFormBtn"
+            type="submit"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Submit
+          </button>
         </form>
       </section>
       <!-- /Contact form section using bootstrap form -->
@@ -208,5 +206,103 @@
         /></a>
       </div>
     </footer>
+    <!-- show modal when the user sends the form -->
+    <div id="exampleModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modalHeader" class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalBody">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              id="sendDataBtn"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#saveDataLocaly"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /show modal when the user send the form -->
+
+    <!-- show modal to confirm sending the data-->
+    <div id="saveDataLocaly" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="saveDataLocalyHeader" class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="saveDataLocalyBody">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              No
+            </button>
+            <button
+              id="saveLocalStorageUserDataBtn"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#successModal"
+            >
+              Yes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /show modal to confirm sending the data -->
+
+    <!-- show modal when the user confirms saving the data locally -->
+    <div id="successModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Message sent! and we'll remember your info for next time.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /show modal when the user confirms saving the data locally -->
   </body>
 </html>
