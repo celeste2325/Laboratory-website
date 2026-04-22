@@ -1,6 +1,7 @@
+
 export const getInsurances = async () => {
   try {
-    const data = await fetch("http://localhost:3001/patientInsurances");
+    const data = await fetch("https://back-js-curse.onrender.com/patientInsurances");
     const insurances = await data.json();
     return insurances;
   } catch (error) {
@@ -10,7 +11,7 @@ export const getInsurances = async () => {
 
 export const getTests = async () => {
   try {
-    const data = await fetch("http://localhost:3001/patientTests");
+    const data = await fetch("https://back-js-curse.onrender.com/patientTests");
     const tests = await data.json();
     return tests;
   } catch (error) {
@@ -20,7 +21,7 @@ export const getTests = async () => {
 
 export const getLocations = async () => {
   try {
-    const data = await fetch("http://localhost:3001/patientLocations");
+    const data = await fetch("https://back-js-curse.onrender.com/patientLocations");
     const locations = await data.json();
     return locations;
   } catch (error) {
